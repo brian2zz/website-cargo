@@ -21,7 +21,7 @@
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="/manifest">
                     <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Manifest</span>
                 </a>
             </li>
