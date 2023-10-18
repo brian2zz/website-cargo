@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\resiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//main route
 Route::get('/', function () {
-    return view('layout.master');
+    return view('pages.auth.loginPage');
 });
+//dashboard
+Route::get('/dashboard', function () {
+    return view('pages.dashboard.index');
+});
+//surat Jalan
+Route::get('/surat-jalan',[resiController::class,'index'])->name('surat_jalan_index');
