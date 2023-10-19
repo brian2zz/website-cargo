@@ -66,17 +66,20 @@
                                             <p class="text-xs font-weight-bold mb-0">Paket</p>
                                         </td>
                                         <td>
-                                            <a href="#" type="button" class="btn btn-info mx-1"
-                                                data-bs-toggle="modal" data-bs-target="#detailProdukKeluar">
-                                                <i class="align-middle" data-feather="list"></i> Detail
-                                            </a>
+                                            <div class="d-flex flex-wrap">
+                                                <a href="#" type="button" class="btn btn-sm btn-info mx-1 my-1"
+                                                    data-bs-toggle="modal" data-bs-target="#detailSuratJalan">
+                                                    <i class="align-middle" data-feather="list"></i> Detail
+                                                </a>
 
-                                            <a href="#" type="button" class="btn btn-warning mx-1">
-                                                <i class="align-middle" data-feather="edit"></i> Edit
-                                            </a>
-                                            <a href="#" type="button" class="btn btn-danger mx-1">
-                                                <i class="align-middle" data-feather="trash"></i> Hapus
-                                            </a>
+                                                <a href="/surat-jalan/edit/1" type="button"
+                                                    class="btn btn-sm btn-warning mx-1 my-1">
+                                                    <i class="align-middle" data-feather="edit"></i> Edit
+                                                </a>
+                                                <a href="#" type="button" class="btn btn-sm btn-danger mx-1 my-1">
+                                                    <i class="align-middle" data-feather="trash"></i> Hapus
+                                                </a>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -102,17 +105,20 @@
                                             <p class="text-xs font-weight-bold mb-0">Paket</p>
                                         </td>
                                         <td>
-                                            <a href="#" type="button" class="btn btn-info mx-1"
-                                                data-bs-toggle="modal" data-bs-target="#detailProdukKeluar">
-                                                <i class="align-middle" data-feather="list"></i> Detail
-                                            </a>
+                                            <div class="d-flex flex-wrap">
+                                                <a href="#" type="button" class="btn btn-sm btn-info mx-1 my-1"
+                                                    data-bs-toggle="modal" data-bs-target="#detailSuratJalan">
+                                                    <i class="align-middle" data-feather="list"></i> Detail
+                                                </a>
 
-                                            <a href="#" type="button" class="btn btn-warning mx-1">
-                                                <i class="align-middle" data-feather="edit"></i> Edit
-                                            </a>
-                                            <a href="#" type="button" class="btn btn-danger mx-1">
-                                                <i class="align-middle" data-feather="trash"></i> Hapus
-                                            </a>
+                                                <a href="/surat-jalan/edit/1" type="button"
+                                                    class="btn btn-sm btn-warning mx-1 my-1">
+                                                    <i class="align-middle" data-feather="edit"></i> Edit
+                                                </a>
+                                                <a href="#" type="button" class="btn btn-sm btn-danger mx-1 my-1">
+                                                    <i class="align-middle" data-feather="trash"></i> Hapus
+                                                </a>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -138,17 +144,20 @@
                                             <p class="text-xs font-weight-bold mb-0">Paket</p>
                                         </td>
                                         <td>
-                                            <a href="#" type="button" class="btn btn-info mx-1"
-                                                data-bs-toggle="modal" data-bs-target="#detailProdukKeluar">
-                                                <i class="align-middle" data-feather="list"></i> Detail
-                                            </a>
+                                            <div class="d-flex flex-wrap">
+                                                <a href="#" type="button" class="btn btn-sm btn-info mx-1 my-1"
+                                                    data-bs-toggle="modal" data-bs-target="#detailSuratJalan">
+                                                    <i class="align-middle" data-feather="list"></i> Detail
+                                                </a>
 
-                                            <a href="#" type="button" class="btn btn-warning mx-1">
-                                                <i class="align-middle" data-feather="edit"></i> Edit
-                                            </a>
-                                            <a href="#" type="button" class="btn btn-danger mx-1">
-                                                <i class="align-middle" data-feather="trash"></i> Hapus
-                                            </a>
+                                                <a href="/surat-jalan/edit/1" type="button"
+                                                    class="btn btn-sm btn-warning mx-1 my-1">
+                                                    <i class="align-middle" data-feather="edit"></i> Edit
+                                                </a>
+                                                <a href="#" type="button" class="btn btn-sm btn-danger mx-1 my-1">
+                                                    <i class="align-middle" data-feather="trash"></i> Hapus
+                                                </a>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -159,7 +168,7 @@
             </div>
         </div>
     </div>
-
+    @include('pages.resi.detail')
 @endsection
 @push('scripts')
     <script>
@@ -194,7 +203,7 @@
                         text: 'Page',
                     },
                 ]
-                
+
             });
         });
     </script>

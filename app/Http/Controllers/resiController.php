@@ -43,7 +43,7 @@ class resiController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('pages.resi.edit');
     }
 
     /**

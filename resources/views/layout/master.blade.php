@@ -19,8 +19,8 @@
 
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="../DataTables/datatables.min.css" rel="stylesheet">
-    <link href="../css/app.css" rel="stylesheet">
+    <link href="{{ asset('../DataTables/datatables.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('../css/app.css') }}" rel="stylesheet">
     <style>
         #chartjs-dashboard-line {
             height: 368px;

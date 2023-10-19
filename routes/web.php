@@ -23,9 +23,11 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('pages.dashboard.index');
 });
+
 //surat Jalan
 Route::get('/surat-jalan',[resiController::class,'index'])->name('surat_jalan_index');
 Route::get('/surat-jalan/tambah',[resiController::class,'create'])->name('surat_jalan_create');
+Route::get('/surat-jalan/edit/{id}',[resiController::class,'edit'])->name('surat_jalan_edit');
 
 //manifest
 Route::get('/manifest',[manifestController::class,'index'])->name('manifest_index');
