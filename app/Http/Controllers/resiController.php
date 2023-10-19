@@ -19,7 +19,7 @@ class resiController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.resi.create');
     }
 
     /**

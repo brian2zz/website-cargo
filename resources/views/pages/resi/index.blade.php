@@ -66,7 +66,7 @@
                                             <p class="text-xs font-weight-bold mb-0">Paket</p>
                                         </td>
                                         <td>
-                                            <a href="#" type="button" class="btn btn-secondary mx-1"
+                                            <a href="#" type="button" class="btn btn-info mx-1"
                                                 data-bs-toggle="modal" data-bs-target="#detailProdukKeluar">
                                                 <i class="align-middle" data-feather="list"></i> Detail
                                             </a>
@@ -102,7 +102,7 @@
                                             <p class="text-xs font-weight-bold mb-0">Paket</p>
                                         </td>
                                         <td>
-                                            <a href="#" type="button" class="btn btn-secondary mx-1"
+                                            <a href="#" type="button" class="btn btn-info mx-1"
                                                 data-bs-toggle="modal" data-bs-target="#detailProdukKeluar">
                                                 <i class="align-middle" data-feather="list"></i> Detail
                                             </a>
@@ -138,7 +138,7 @@
                                             <p class="text-xs font-weight-bold mb-0">Paket</p>
                                         </td>
                                         <td>
-                                            <a href="#" type="button" class="btn btn-secondary mx-1"
+                                            <a href="#" type="button" class="btn btn-info mx-1"
                                                 data-bs-toggle="modal" data-bs-target="#detailProdukKeluar">
                                                 <i class="align-middle" data-feather="list"></i> Detail
                                             </a>
@@ -175,7 +175,7 @@
                 buttons: [{
                         text: 'Tambah Data', // Label tombol
                         action: function(e, dt, node, config) {
-                            
+                            window.location.href = '/surat-jalan/tambah';
                         }
                     },
                     {
@@ -186,7 +186,7 @@
                     },
                     {
                         extend: 'print',
-                        text: 'Data',
+                        text: 'Print',
 
                     },
                     {

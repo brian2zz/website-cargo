@@ -21,6 +21,7 @@ return new class extends Migration
             $table->unsignedBigInteger('tipe_kiriman_id')->nullable();
             $table->unsignedBigInteger('penanganan_id')->nullable();
             $table->integer('status_cod')->nullable();
+            $table->float('biaya_cod',25,2)->nullable();
             $table->integer('asuransi')->nullable();
             $table->integer('paking')->nullable();
             $table->integer('berat')->nullable();
