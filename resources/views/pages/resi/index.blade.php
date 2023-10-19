@@ -150,7 +150,7 @@
                                                     <i class="align-middle" data-feather="list"></i> Detail
                                                 </a>
 
-                                                <a href="/surat-jalan/edit/1" type="button"
+                                                <a href="/surat-jalan/print/1" type="button"
                                                     class="btn btn-sm btn-warning mx-1 my-1">
                                                     <i class="align-middle" data-feather="edit"></i> Edit
                                                 </a>
@@ -170,7 +170,92 @@
     </div>
     @include('pages.resi.detail')
 @endsection
+@push('styles')
+    <style>
+        @media print {
+
+            @page {
+                size: A4;
+                /* Mengatur ukuran kertas ke A4 dengan orientasi landscape */
+                margin: 0;
+                /* Menghapus margin */
+            }
+
+            body {
+                width: 100%;
+                overflow: hidden;
+                /* Memastikan body mencakup seluruh lebar layar */
+            }
+
+            .modal {
+                width: 100%;
+                /* Mengatur lebar modal ke 100% */
+                margin: 0;
+                /* Menghapus margin modal */
+            }
+
+            .modal-content {
+                width: 100%;
+                /* Mengatur lebar konten modal ke 100% */
+            }
+
+            .modal-body {
+                max-height: 100%;
+                /* Memastikan modal body mencakup seluruh tinggi modal */
+                overflow-y: auto;
+                /* Menambahkan scrollbar jika konten terlalu panjang */
+            }
+
+            body,
+            .modal,
+            .modal-content,
+            .modal-body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar,.modal-header,
+            .modal-footer {
+                display: none;
+            }
+
+            .modal-xl {
+                max-width: 100% !important;
+                width: 100%;
+            }
+
+            .modal-content {
+                border: none;
+                overflow: hidden;
+                height: calc(100vh - 40px);
+                /* Sesuaikan dengan tinggi halaman minus margin */
+            }
+
+            .modal-body {
+                max-height: calc(100% - 120px);
+                /* Sesuaikan dengan tinggi modal body minus margin */
+                overflow-y: auto;
+            }
+
+            .modal {
+                overflow: hidden !important;
+            }
+        }
+    </style>
+@endpush
 @push('scripts')
+    <script>
+        function printPage() {
+            // Mendapatkan HTML dari konten yang ingin dicetak
+            const contentToPrint = document.createElement('iframe');
+            contentToPrint.style.display = 'none';
+            contentToPrint.src = '/surat-jalan/print/1';
+
+            document.body.appendChild(contentToPrint);
+            contentToPrint.contentWindow.focus();
+            contentToPrint.contentWindow.print();
+        }
+    </script>
     <script>
         $(document).ready(function() {
             $('#surat_jalan').DataTable({

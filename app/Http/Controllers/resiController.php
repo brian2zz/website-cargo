@@ -45,6 +45,11 @@ class resiController extends Controller
     {
         return view('pages.resi.edit');
     }
+    
+    public function print(string $id)
+    {
+        return view('pages.resi.print');
+    }
 
     /**
      * Update the specified resource in storage.

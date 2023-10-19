@@ -28,6 +28,7 @@ Route::get('/dashboard', function () {
 Route::get('/surat-jalan',[resiController::class,'index'])->name('surat_jalan_index');
 Route::get('/surat-jalan/tambah',[resiController::class,'create'])->name('surat_jalan_create');
 Route::get('/surat-jalan/edit/{id}',[resiController::class,'edit'])->name('surat_jalan_edit');
+Route::get('/surat-jalan/print/{id}',[resiController::class,'print'])->name('surat_jalan_print');
 
 //manifest
 Route::get('/manifest',[manifestController::class,'index'])->name('manifest_index');
