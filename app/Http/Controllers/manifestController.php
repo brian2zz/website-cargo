@@ -10,11 +10,10 @@ class manifestController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        {
+    { {
             return view('pages.manifest.index');
         }
-            //
+        //
     }
 
     /**
@@ -22,7 +21,7 @@ class manifestController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.manifest.create');
     }
 
     /**
@@ -36,8 +35,11 @@ class manifestController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
-    {
+    public function show( //string $id
+    )
+    { {
+            return view('pages.manifest.detail');
+        }
         //
     }
 
