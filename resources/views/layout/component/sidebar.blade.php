@@ -8,13 +8,13 @@
                 Pages
             </li>
 
-            <li class="sidebar-item active">
+            <li class="sidebar-item {{ Request::is('dashboard') ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{ url('/dashboard') }}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
                 </a>
             </li>
 
-            <li class="sidebar-item">
+            <li class="sidebar-item {{ Request::is('surat-jalan') ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{ url('/surat-jalan') }}">
                     <i class="align-middle" data-feather="user"></i> <span class="align-middle">Surat Jalan</span>
                 </a>

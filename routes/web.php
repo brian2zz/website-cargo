@@ -24,3 +24,4 @@ Route::get('/dashboard', function () {
 });
 //surat Jalan
 Route::get('/surat-jalan',[resiController::class,'index'])->name('surat_jalan_index');
+Route::get('/surat-jalan/tambah',[resiController::class,'create'])->name('surat_jalan_create');
