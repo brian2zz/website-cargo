@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\manifestController;
 use App\Http\Controllers\resiController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +26,6 @@ Route::get('/dashboard', function () {
 //surat Jalan
 Route::get('/surat-jalan',[resiController::class,'index'])->name('surat_jalan_index');
 Route::get('/surat-jalan/tambah',[resiController::class,'create'])->name('surat_jalan_create');
+
+//manifest
+Route::get('/manifest',[manifestController::class,'index'])->name('manifest_index');
