@@ -66,4 +66,8 @@ class manifestController extends Controller
     {
         //
     }
+    public function print(string $id)
+    {
+        return view('pages.manifest.print');
+    }
 }
