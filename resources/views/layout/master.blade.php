@@ -19,14 +19,15 @@
 
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="../DataTables/datatables.min.css" rel="stylesheet">
-    <link href="../css/app.css" rel="stylesheet">
+    <link href="{{ asset('../DataTables/datatables.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('../css/app.css') }}" rel="stylesheet">
     <style>
         #chartjs-dashboard-line {
             height: 368px;
             /* Ganti nilai tinggi sesuai keinginan Anda */
         }
     </style>
+    @stack('styles')
 </head>
 
 <body>
@@ -73,11 +74,11 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="../DataTables/datatables.min.js" ></script>
+    <script src="{{ asset('../DataTables/datatables.min.js') }}" ></script>
     {{-- <script>
         var $j = jQuery.noConflict();
     </script> --}}
-    <script src="../js/app.js"></script>
+    <script src="{{ asset('../js/app.js') }}"></script>
 
     @stack('scripts')
 </body>
